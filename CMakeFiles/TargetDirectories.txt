@@ -1,0 +1,3 @@
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/CMakeFiles/rebuild_cache.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/CMakeFiles/edit_cache.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/CMakeFiles/MyExecutable.dir
