@@ -10,11 +10,15 @@ set(CMAKE_C_STANDARD 99)#c version
 #Sources
 set(SOURCES
     main.cpp
+    komunikaty.cpp
+    zadania.cpp
 )
 
 # Heading files
 set(HEADERS
-
+    komunikaty.hpp
+    zadania.hpp
+    kolejka_szablon.hpp
 )
 
 #Make executable file
