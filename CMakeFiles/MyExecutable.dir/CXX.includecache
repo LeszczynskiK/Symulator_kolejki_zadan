@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/kolejka_szablon.hpp
+iostream
+-
+vector
+-
+algorithm
+-
+
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/main.cpp
 iostream
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/iostream
+kolejka_szablon.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/kolejka_szablon.hpp
 
