@@ -1,3 +1,6 @@
+#ifndef KOLEJKA_SZABLON_HPP
+#define KOLEJKA_SZABLON_HPP
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -45,3 +48,6 @@ template<typename T1,typename T2> class szablon_kolejki
     }
 
 };
+
+
+#endif //SKOLEJKA_SZABLON_HPP

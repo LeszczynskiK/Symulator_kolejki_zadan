@@ -2,9 +2,9 @@
 
 void pause_add()//pause based on for loop
 {
-    for(int w=0;w<999;w++)
+    for(int w=0;w<9999;w++)
     {
-        for(int n=0;n<999;n++)
+        for(int n=0;n<9999;n++)
         {
             //empty - only base on looping
         }
@@ -22,6 +22,7 @@ void long_pause(int i)//pause_add period multiplied by i
 
 void first_info()//first message(information about application)
 {
+    //display that this app is about
     cout<<"------------------------------------------------"<<endl<<endl;
     cout<<"Witaj w symulatorze kolejkowania zadan"<<endl;
     cout<<"Za chwile wprowadz twoje zadania, ktore beda skladac sie z 3 czesci"<<endl;
@@ -29,6 +30,13 @@ void first_info()//first message(information about application)
     cout<<"2. Czas wykonania zadania"<<endl;
     cout<<"3. Opis zadania"<<endl<<endl;
     cout<<"------------------------------------------------"<<endl<<endl;
+
+    pause_add();
+    system("clear");//clear cmd
+
+    cout<<"Ale najpierw..."<<endl;//inform what you have to do before you will fill task gaps
+    long_pause(3);
+    system("clear");
 }
 
 void choose_mode()

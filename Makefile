@@ -123,6 +123,33 @@ MyExecutable/fast:
 	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
 .PHONY : MyExecutable/fast
 
+komunikaty.o: komunikaty.cpp.o
+
+.PHONY : komunikaty.o
+
+# target to build an object file
+komunikaty.cpp.o:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/komunikaty.cpp.o
+.PHONY : komunikaty.cpp.o
+
+komunikaty.i: komunikaty.cpp.i
+
+.PHONY : komunikaty.i
+
+# target to preprocess a source file
+komunikaty.cpp.i:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/komunikaty.cpp.i
+.PHONY : komunikaty.cpp.i
+
+komunikaty.s: komunikaty.cpp.s
+
+.PHONY : komunikaty.s
+
+# target to generate assembly for a file
+komunikaty.cpp.s:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/komunikaty.cpp.s
+.PHONY : komunikaty.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+zadania.o: zadania.cpp.o
+
+.PHONY : zadania.o
+
+# target to build an object file
+zadania.cpp.o:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/zadania.cpp.o
+.PHONY : zadania.cpp.o
+
+zadania.i: zadania.cpp.i
+
+.PHONY : zadania.i
+
+# target to preprocess a source file
+zadania.cpp.i:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/zadania.cpp.i
+.PHONY : zadania.cpp.i
+
+zadania.s: zadania.cpp.s
+
+.PHONY : zadania.s
+
+# target to generate assembly for a file
+zadania.cpp.s:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/zadania.cpp.s
+.PHONY : zadania.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MyExecutable"
+	@echo "... komunikaty.o"
+	@echo "... komunikaty.i"
+	@echo "... komunikaty.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... zadania.o"
+	@echo "... zadania.i"
+	@echo "... zadania.s"
 .PHONY : help
 
 

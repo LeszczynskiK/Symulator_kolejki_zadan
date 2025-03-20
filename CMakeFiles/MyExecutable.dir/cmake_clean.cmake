@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyExecutable.dir/komunikaty.cpp.o"
   "CMakeFiles/MyExecutable.dir/main.cpp.o"
+  "CMakeFiles/MyExecutable.dir/zadania.cpp.o"
   "MyExecutable"
   "MyExecutable.pdb"
 )
