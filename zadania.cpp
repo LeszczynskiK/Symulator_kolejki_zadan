@@ -1,43 +1,135 @@
 #include "zadania.hpp"
 
-    //initialise queue here
-extern szablon_kolejki<int, string> queue1;//T1 is in type(time) , T2 is string type(name of task)
+extern szablon_kolejki<int, string> queue1;
 
-void dodaj_zadanie(szablon_kolejki<int, string> queue)//add new task to vector
+void dodaj_zadanie(szablon_kolejki<int, string>& queue1)//add new task to vector
 {
-    //add task is created in template file kolejka_szablon.hpp
-    queue.addTask(2, 3,"task 1");//priority, duration, name of task
-    queue.addTask(1, 5,"taks 2");
-    queue.addTask(3, 2,"task 3");
+    int priority;
+    int duration;
+    string name;
+
+    cout << "Podaj priorytet zadania: ";
+    cin >> priority;
+    cout<<endl;
+
+    cout << "Podaj czas wykonania zadania: ";
+    cin >> duration;
+    cout<<endl;
+
+    cout << "Podaj nazwe zadania: ";
+    cin.ignore();//ignore new line char after cin(becouse we are using getline, i wanr want new line on the beginning of line)
+    getline(cin, name); // get full name of task
+
+    queue1.addTask(priority, duration, name);//put values to vector which is given by argument typping 
+    cout << "Zadanie dodane!" << endl;
 }
 
 
-void usun_zadanie(szablon_kolejki<int, string> queue)//delete existing tast from vector
+void usun_zadanie(szablon_kolejki<int, string>& queue1) 
 {
+    if (queue1.queue.empty()) //if queue1(argument) . queue(template vector, from szablon_kolejki) is empty
+    {
+        cout << "Kolejka jest pusta, nie ma czego usunac!" << endl;
+        return;
+    }
 
+    int priority;
+    int duration;
+    string name;
 
+    cout<<endl;
+    cout << "Aktualne zadania:" << endl;
+    queue1.display();
+    cout<<endl<<endl;
+
+    cout << "Podaj dane zadania do usuniecia:" << endl;
+    cout << "Priorytet: ";//put values to variable(we will look for tast chich fields have these values)
+    cin >> priority;
+    cout << "Czas wykonania: ";
+    cin >> duration;
+    cout << "Nazwa zadania: ";
+    cin.ignore();
+    getline(cin, name);
+    cout<<endl;
+
+    // look for task with typped in parmeters
+    for (auto it = queue1.queue.begin(); it != queue1.queue.end(); ++it) 
+    {//iterate throw queue(template - this is type), queue(this is oryginal queue variable type to work on)
+        if (it->priority == priority && it->duration == duration && it->name == name) 
+        {//if it(iterator) value is equal to out search one
+            queue1.queue.erase(it);//erase it(this task which is what we were looking for)
+            cout << "Zadanie usuniete!" << endl;
+            return;
+        }
+    }
+    cout << "Nie znaleziono zadania o podanych parametrach!" << endl;//if not found
 }
 
-
-void edytuj_zadanie(szablon_kolejki<int, string> queue)//edit existing fast from vector
+void edytuj_zadanie(szablon_kolejki<int, string>& queue1) 
 {
+    if (queue1.queue.empty()) 
+    {//if queue is empty
+        cout << "Kolejka jest pusta, nie ma czego edytowac!" << endl;
+        return;
+    }
 
+    int priority;
+    int duration;
+    string name;
 
+    cout << "Aktualne zadania:" << endl;
+    queue1.display();
+    cout<<endl<<endl;
+
+    cout << "Podaj dane zadania do edycji:" << endl;
+    cout << "Priorytet: ";
+    cin >> priority;//put values to variable(we will look for tast chich fields have these values)
+    cout << "Czas wykonania: ";
+    cin >> duration;
+    cout << "Nazwa zadania: ";
+    cin.ignore();
+    getline(cin, name);
+    cout<<endl;
+
+    //look for tast with typped parameters
+    for (auto& task : queue1.queue) 
+    { //reference becouse we want to modify original one
+        if (task.priority == priority && task.duration == duration && task.name == name) //iterate throw queue(template - this is type), queue(this is oryginal queue variable type to work on)
+        {
+            //put new values(which will replace the old ones)
+            cout << "Podaj nowe dane zadania:" << endl;
+            cout << "Nowy priorytet: ";
+            cin >> task.priority;//becouse its reference auto& task, we will replace value in original variavle
+            cout << "Nowy czas wykonania: ";
+            cin >> task.duration;
+            cout << "Nowa nazwa zadania: ";
+            cin.ignore();
+            getline(cin, task.name);
+            cout << "Zadanie zaktualizowane!" << endl;
+            return;
+        }
+    }
+    cout << "Nie znaleziono zadania o podanych parametrach!" << endl;
 }
 
+void wypisz_zadania(szablon_kolejki<int, string>& queue1) {
+    queue1.display();//use function which is created in kolejka_szablon.hpp
 
-void wypisz_zadania(szablon_kolejki<int, string> queue)//display all working tasks with is counting time to finish etc...
-{
-    //display tasks is created in template file kolejka_szablon.hpp
-    queue.display();
+    cout << endl << endl << endl;
+    cout << "Czy chcesz przejsc dalej?" << endl;
+    cout << "Nacisnij dowolny przycisk..." << endl;
+    
+    //wait for input
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');//ignore all chars in input buffor  till you get new line char or get  max number of chars(in practive, find \n)
+    cin.get(); //wait for any button click to continue
+    system("clear");
 }
 
 
 void koniecSymulacji()//exit app
 {
-
-
-
+    cout << "Koniec symulacji!" << endl;
+    exit(0);
 }
 
 int temp1;        // temp choice variable
@@ -60,6 +152,7 @@ void chooseMode() // choos which function you want to call
     }
 }
 
+//queue1 if from exter variable
 void opcje()
 {
     switch (temp1)
@@ -98,8 +191,6 @@ void opcje()
         cout << "Wybrano: ";
         cout << "4. Wypisz dzialajace zadania" << endl;
         wypisz_zadania(queue1); // call function to display working tasks
-        pause_add();
-        system("clear");
 
         break;
 

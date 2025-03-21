@@ -24,10 +24,9 @@ struct Task {
 //T2 is "name" of task format
 template<typename T1,typename T2> class szablon_kolejki
 {
-    private:
+    public:
     vector<Task<T1, T2>> queue;//task representation (based on structure named Task)->with template base(T1 and T2)
 
-    public:
     void addTask(int priority,T1 duration, T2 name) //add task to queue(priority,time to finish task, name of task)
     {
         queue.emplace_back(priority,duration,name);//emplace is better than push, becouse push firsly create object and then copy or move to vector
