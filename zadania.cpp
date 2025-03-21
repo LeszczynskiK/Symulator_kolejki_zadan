@@ -138,26 +138,7 @@ void koniecSymulacji()//exit app
 int temp1;        // temp choice variable
 void chooseMode() // choos which function you want to call
 {
-    cout << endl;
-    cout << "Wybor: ";
-    cin >> temp1;//type value to choose option from 1 to 6 (tasks manager)
-
-    if (temp1 > 0 && temp1 < 7)//if number is out of option range
-    {
-        opcje();//put temp1 to switch case and run functions which fit case number
-    }
-    else
-    {
-        cout << "Nie ma takiego wyboru...";
-        cout<<endl;
-        cout<<endl;
-        cout<<"----------------------------------------"<<endl;
-        cout << "Wybor: ";
-        cin >> temp1;//put again value to temp1
-        cout<<endl;
-        cout<<"----------------------------------------"<<endl;
-        opcje();//run function wih new temp1 value..
-    }
+    temp1 = your_choice();//use protected function... (enable to type not wanted value to temp1...)
 }
 
 void startSimul()//start simulation of tasks working in queue

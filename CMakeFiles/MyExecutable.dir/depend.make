@@ -3,6 +3,7 @@
 
 CMakeFiles/MyExecutable.dir/InputProtect.cpp.o: InputProtect.cpp
 CMakeFiles/MyExecutable.dir/InputProtect.cpp.o: InputProtect.hpp
+CMakeFiles/MyExecutable.dir/InputProtect.cpp.o: komunikaty.hpp
 
 CMakeFiles/MyExecutable.dir/komunikaty.cpp.o: komunikaty.cpp
 CMakeFiles/MyExecutable.dir/komunikaty.cpp.o: komunikaty.hpp

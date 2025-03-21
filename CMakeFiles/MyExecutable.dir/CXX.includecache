@@ -13,6 +13,8 @@ InputProtect.hpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.hpp
 iostream
 -
+komunikaty.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/komunikaty.hpp
 
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/kolejka_szablon.hpp
 iostream
@@ -25,6 +27,16 @@ algorithm
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/komunikaty.hpp
 iostream
 -
+
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/main.cpp
+iostream
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/iostream
+kolejka_szablon.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/kolejka_szablon.hpp
+komunikaty.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/komunikaty.hpp
+zadania.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/zadania.hpp
 
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/zadania.cpp
 zadania.hpp
