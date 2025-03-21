@@ -123,6 +123,33 @@ MyExecutable/fast:
 	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
 .PHONY : MyExecutable/fast
 
+InputProtect.o: InputProtect.cpp.o
+
+.PHONY : InputProtect.o
+
+# target to build an object file
+InputProtect.cpp.o:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/InputProtect.cpp.o
+.PHONY : InputProtect.cpp.o
+
+InputProtect.i: InputProtect.cpp.i
+
+.PHONY : InputProtect.i
+
+# target to preprocess a source file
+InputProtect.cpp.i:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/InputProtect.cpp.i
+.PHONY : InputProtect.cpp.i
+
+InputProtect.s: InputProtect.cpp.s
+
+.PHONY : InputProtect.s
+
+# target to generate assembly for a file
+InputProtect.cpp.s:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/InputProtect.cpp.s
+.PHONY : InputProtect.cpp.s
+
 komunikaty.o: komunikaty.cpp.o
 
 .PHONY : komunikaty.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MyExecutable"
+	@echo "... InputProtect.o"
+	@echo "... InputProtect.i"
+	@echo "... InputProtect.s"
 	@echo "... komunikaty.o"
 	@echo "... komunikaty.i"
 	@echo "... komunikaty.s"

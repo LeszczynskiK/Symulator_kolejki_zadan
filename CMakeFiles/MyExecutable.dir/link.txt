@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/MyExecutable.dir/main.cpp.o CMakeFiles/MyExecutable.dir/komunikaty.cpp.o CMakeFiles/MyExecutable.dir/zadania.cpp.o  -o MyExecutable  -lpthread 
+/usr/bin/c++     CMakeFiles/MyExecutable.dir/main.cpp.o CMakeFiles/MyExecutable.dir/komunikaty.cpp.o CMakeFiles/MyExecutable.dir/zadania.cpp.o CMakeFiles/MyExecutable.dir/InputProtect.cpp.o  -o MyExecutable  -lpthread 

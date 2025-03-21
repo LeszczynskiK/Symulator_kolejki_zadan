@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.cpp
+InputProtect.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.hpp
+
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.hpp
+iostream
+-
+
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/kolejka_szablon.hpp
 iostream
 -
@@ -29,4 +37,6 @@ kolejka_szablon.hpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/kolejka_szablon.hpp
 komunikaty.hpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/komunikaty.hpp
+InputProtect.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.hpp
 

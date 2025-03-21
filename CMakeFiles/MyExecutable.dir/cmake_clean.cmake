@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyExecutable.dir/InputProtect.cpp.o"
   "CMakeFiles/MyExecutable.dir/komunikaty.cpp.o"
   "CMakeFiles/MyExecutable.dir/main.cpp.o"
   "CMakeFiles/MyExecutable.dir/zadania.cpp.o"

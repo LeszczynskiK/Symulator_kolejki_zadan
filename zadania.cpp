@@ -2,11 +2,13 @@
 
 extern szablon_kolejki<int, string> queue1;
 
+//to complete task creating - variables to define this
+int priority;
+int duration;
+string name;
+
 void dodaj_zadanie(szablon_kolejki<int, string>& queue1)//add new task to vector
 {
-    int priority;
-    int duration;
-    string name;
 
     cout << "Podaj priorytet zadania: ";
     cin >> priority;
@@ -34,11 +36,6 @@ void usun_zadanie(szablon_kolejki<int, string>& queue1)
         cout << "Kolejka jest pusta, nie ma czego usunac!" << endl;
         return;
     }
-
-    //we will work on 3 values to create task based on...
-    int priority;
-    int duration;
-    string name;
 
     cout<<endl;
     cout << "Aktualne zadania:" << endl;
@@ -78,11 +75,6 @@ void edytuj_zadanie(szablon_kolejki<int, string>& queue1)
         cout << "Kolejka jest pusta, nie ma czego edytowac!" << endl;
         return;
     }
-
-    //we will work on 3 values to create task based on...(here we are looking for typped values to compare with vector which has all tasks inside)
-    int priority;
-    int duration;
-    string name;
 
     cout << "Aktualne zadania:" << endl;
     queue1.display();
@@ -148,9 +140,9 @@ void chooseMode() // choos which function you want to call
 {
     cout << endl;
     cout << "Wybor: ";
-    cin >> temp1;//type value to choose option from 1 to 5 (tasks manager)
+    cin >> temp1;//type value to choose option from 1 to 6 (tasks manager)
 
-    if (temp1 > 0 && temp1 < 6)//if number is out of option range
+    if (temp1 > 0 && temp1 < 7)//if number is out of option range
     {
         opcje();//put temp1 to switch case and run functions which fit case number
     }
@@ -166,6 +158,21 @@ void chooseMode() // choos which function you want to call
         cout<<"----------------------------------------"<<endl;
         opcje();//run function wih new temp1 value..
     }
+}
+
+void startSimul()//start simulation of tasks working in queue
+{
+    system("clear");
+    cout<<"Zadania zaczynaja sie wykonywac zgodnie z zasada kolejki i priorytetow..."<<endl;
+    cout<<endl;
+
+    cout<<"------------------------------------------------------------------";
+    cout<<endl;
+
+    
+
+    cout<<endl;
+    cout<<"------------------------------------------------------------------";
 }
 
 //queue1 if from exter variable
@@ -233,7 +240,20 @@ void opcje()
 
         break;
 
+
     case 5:
+        system("clear");
+        cout<<"Wybrano: ";
+        cout<<endl;
+        cout<<"5. Symulacja dzialania zadan w kolejce";
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
+        startSimul(); // start simulation of tasks working in queue
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
+        break;
+
+    case 6:
         system("clear");
         cout << "Wybrano: ";
         cout<<endl;
@@ -261,3 +281,5 @@ void opcje()
         break;
     }
 }
+
+
