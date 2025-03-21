@@ -22,6 +22,7 @@ void long_pause(int i)//pause_add period multiplied by i
 
 void first_info()//first message(information about application)
 {
+    system("clear");
     //display that this app is about
     cout<<"------------------------------------------------"<<endl<<endl;
     cout<<"Witaj w symulatorze kolejkowania zadan"<<endl;
@@ -31,11 +32,11 @@ void first_info()//first message(information about application)
     cout<<"3. Opis zadania"<<endl<<endl;
     cout<<"------------------------------------------------"<<endl<<endl;
 
-    pause_add();
+    long_pause(4);
     system("clear");//clear cmd
 
     cout<<"Ale najpierw..."<<endl;//inform what you have to do before you will fill task gaps
-    long_pause(3);
+    long_pause(2);
     system("clear");
 }
 

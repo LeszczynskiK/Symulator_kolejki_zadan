@@ -22,6 +22,7 @@ void dodaj_zadanie(szablon_kolejki<int, string>& queue1)//add new task to vector
 
     //add fask if function made in template (kolejka_szablon.hpp)
     queue1.addTask(priority, duration, name);//put values to vector which is given by argument typping 
+    cout<<endl;
     cout << "Zadanie dodane!" << endl;
 }
 
@@ -42,7 +43,9 @@ void usun_zadanie(szablon_kolejki<int, string>& queue1)
     cout<<endl;
     cout << "Aktualne zadania:" << endl;
     queue1.display();
-    cout<<endl<<endl;
+    cout<<endl;
+    cout<<"----------------------------------------"<<endl;
+    cout<<endl;
 
     cout << "Podaj dane zadania do usuniecia:" << endl;
     cout << "Priorytet: ";//put values to variable(we will look for tast chich fields have these values)
@@ -60,6 +63,7 @@ void usun_zadanie(szablon_kolejki<int, string>& queue1)
         if (it->priority == priority && it->duration == duration && it->name == name) //it-> is iterator , we connect it with variable one to get proper value of what we want
         {//if it(iterator) value is equal to out search one
             queue1.queue.erase(it);//erase it(this task which is what we were looking for)
+            cout<<endl;
             cout << "Zadanie usuniete!" << endl;
             return;
         }
@@ -82,7 +86,9 @@ void edytuj_zadanie(szablon_kolejki<int, string>& queue1)
 
     cout << "Aktualne zadania:" << endl;
     queue1.display();
-    cout<<endl<<endl;
+    cout<<endl;
+    cout<<"----------------------------------------"<<endl;
+    cout<<endl;
 
     cout << "Podaj dane zadania do edycji:" << endl;
     cout << "Priorytet: ";
@@ -107,7 +113,8 @@ void edytuj_zadanie(szablon_kolejki<int, string>& queue1)
             cin >> task.duration;
             cout << "Nowa nazwa zadania: ";
             cin.ignore();
-            getline(cin, task.name);;//ignore new line after cin - becouse as line from getline we want to skip part of \n
+            getline(cin, task.name);//ignore new line after cin - becouse as line from getline we want to skip part of \n
+            cout<<endl;
             cout << "Zadanie zaktualizowane!" << endl;
             return;
         }
@@ -150,8 +157,13 @@ void chooseMode() // choos which function you want to call
     else
     {
         cout << "Nie ma takiego wyboru...";
+        cout<<endl;
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         cout << "Wybor: ";
         cin >> temp1;//put again value to temp1
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         opcje();//run function wih new temp1 value..
     }
 }
@@ -167,8 +179,13 @@ void opcje()
     case 1:
         system("clear");
         cout << "Wybrano: ";
+        cout<<endl;
         cout << "1. Wprowadz zadanie" << endl;
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         dodaj_zadanie(queue1); // call function to add task
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         pause_add();
         system("clear");
 
@@ -176,8 +193,13 @@ void opcje()
     case 2:
         system("clear");
         cout << "Wybrano: ";
+        cout<<endl;
         cout << "2. Usun zadanie" << endl;
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         usun_zadanie(queue1); // call function to delete task
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         pause_add();
         system("clear");
 
@@ -186,8 +208,13 @@ void opcje()
     case 3:
         system("clear");
         cout << "Wybrano: ";
+        cout<<endl;
         cout << "3. Edytuj istniejace zadanie" << endl;
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         edytuj_zadanie(queue1); // call function to edit task
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         pause_add();
         system("clear");
 
@@ -196,15 +223,22 @@ void opcje()
     case 4:
         system("clear");
         cout << "Wybrano: ";
+        cout<<endl;
         cout << "4. Wypisz dzialajace zadania" << endl;
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
         wypisz_zadania(queue1); // call function to display working tasks
+        cout<<endl;
+        cout<<"----------------------------------------"<<endl;
 
         break;
 
     case 5:
         system("clear");
         cout << "Wybrano: ";
+        cout<<endl;
         cout << "5. Wyjdz z programu" << endl;
+        cout<<endl;
 
         // count 3,2,1 and then quit
         pause_add();
