@@ -16,6 +16,7 @@ int main()
     {
         choose_mode(); // this is only information display
         chooseMode();  // here we choose which function we want to use
+        opcje();//run choosed option in chooseMode()
     }
 
     return 0;

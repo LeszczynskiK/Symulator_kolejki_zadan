@@ -75,3 +75,22 @@ int getInt(const string &msg) //argument is message value to display
 
     return value;//here we are sure that choice is correct...
 }
+
+string getString(const string &msg) {
+    string input;
+    bool valid = false;
+
+    do {
+        cout << msg;
+        getline(cin, input);
+
+        if (input.empty()) {
+            system("clear");
+            cout << "Wartosc nie moze byc pusta! Wprowadz ponownie." << endl;
+        } else {
+            valid = true;
+        }
+    } while (!valid);
+
+    return input;
+}

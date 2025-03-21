@@ -10,17 +10,11 @@ string name;
 void dodaj_zadanie(szablon_kolejki<int, string>& queue1)//add new task to vector
 {
 
-    cout << "Podaj priorytet zadania: ";
-    cin >> priority;
-    cout<<endl;
+    priority = getInt("Podaj priorytet zadania: ");//load priority using protected funciton
 
-    cout << "Podaj czas wykonania zadania: ";
-    cin >> duration;
-    cout<<endl;
+    duration = getInt("Podaj czas wykonania zadania: ");//load duration using protected function
 
-    cout << "Podaj nazwe zadania: ";
-    cin.ignore();//ignore new line char after cin(becouse we are using getline, i wanr want new line on the beginning of line)
-    getline(cin, name); // get full name of task
+    name = getString("Podaj nazwe zadania: ");//load name of task using protected function
 
     //add fask if function made in template (kolejka_szablon.hpp)
     queue1.addTask(priority, duration, name);//put values to vector which is given by argument typping 
@@ -45,14 +39,12 @@ void usun_zadanie(szablon_kolejki<int, string>& queue1)
     cout<<endl;
 
     cout << "Podaj dane zadania do usuniecia:" << endl;
-    cout << "Priorytet: ";//put values to variable(we will look for tast chich fields have these values)
-    cin >> priority;
-    cout << "Czas wykonania: ";
-    cin >> duration;
-    cout << "Nazwa zadania: ";
-    cin.ignore();
-    getline(cin, name);;//ignore new line after cin - becouse as line from getline we want to skip part of \n
-    cout<<endl;
+    priority = getInt("Podaj priorytet zadania: ");//load priority using protected funciton
+
+    duration = getInt("Podaj czas wykonania zadania: ");//load duration using protected function
+
+    name = getString("Podaj nazwe zadania: ");//load name of task using protected function
+
 
     // look for task with typped in parmeters
     for (auto it = queue1.queue.begin(); it != queue1.queue.end(); ++it) //iterate from begin of vector till the end..
@@ -83,14 +75,12 @@ void edytuj_zadanie(szablon_kolejki<int, string>& queue1)
     cout<<endl;
 
     cout << "Podaj dane zadania do edycji:" << endl;
-    cout << "Priorytet: ";
-    cin >> priority;//put values to variable(we will look for tast chich fields have these values)
-    cout << "Czas wykonania: ";
-    cin >> duration;
-    cout << "Nazwa zadania: ";
-    cin.ignore();//ignore new line after cin - becouse as line from getline we want to skip part of \n
-    getline(cin, name);
-    cout<<endl;
+    priority = getInt("Podaj priorytet zadania: ");//load priority using protected funciton
+
+    duration = getInt("Podaj czas wykonania zadania: ");//load duration using protected function
+
+    name = getString("Podaj nazwe zadania: ");//load name of task using protected function
+
 
     //look for tast with typped parameters
     for (auto& task : queue1.queue) 
