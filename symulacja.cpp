@@ -20,9 +20,11 @@ void executeTasks(szablon_kolejki<int, string>& queue1) //function to simulate t
     }
 
     //sort by priority - lower priority is more important(will execute quicker)
-    stable_sort(queue1.queue.begin(), queue1.queue.end(), 
-        [](const Task<int, string>& a, const Task<int, string>& b) {
-            return a.priority < b.priority;
+    //stable_sort is sort function from algorithm library
+    stable_sort(queue1.queue.begin(), queue1.queue.end(), //area of where to sort in vector (from .begin to .end)
+        [](const Task<int, string>& a, const Task<int, string>& b) {//lambda is funciton to compare(how to sort - sorting rule)
+            return a.priority < b.priority;//if a < b, means a should be in front of b in queue 
+            //vector queue1 is modified directly, so dont need to create new queue for sorted values...
         });
 
     

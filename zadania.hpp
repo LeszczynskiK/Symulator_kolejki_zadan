@@ -20,5 +20,6 @@ void edytuj_zadanie(szablon_kolejki<int, string> &); // edit existing fast from 
 void wypisz_zadania(szablon_kolejki<int, string> &); // display all working tasks with is counting time to finish etc...
 void startSimul();                                   // start simulation of tasks working in queue
 void koniecSymulacji();                              // exit app
+void confirm_newTask();//press any button to go to new choice of function in app...
 
 #endif // ZADANIA_HPP

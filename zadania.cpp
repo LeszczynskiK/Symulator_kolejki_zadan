@@ -7,8 +7,24 @@ int priority;
 int duration;
 string name;
 
+void confirm_newTask()//press button to go to next task...
+{
+     //after display of tasks, make quick break(when use want to go to nex part, have to click ANY button)
+     cout << endl << endl << endl;
+     cout << "Czy chcesz przejsc dalej?" << endl;
+     cout << "Nacisnij dowolny przycisk dwukrotnie..." << endl;
+     
+     //wait for input
+     cin.ignore(numeric_limits<streamsize>::max(), '\n');//ignore all chars in input buffor  till you get new line char or get  max number of chars(in practive, find \n)
+     cin.get(); //wait for any button click to continue
+     system("clear");
+}
+
 void dodaj_zadanie(szablon_kolejki<int, string>& queue1)//add new task to vector
 {
+    cout<<"-------------------------------------------------------------------"<<endl;
+    cout<<"Gdy wszedles przypadkowo... wprowadz losowe dane!"<<endl;
+    cout<<"-------------------------------------------------------------------"<<endl;
 
     cout<<"Im mniejszy index priorytetu tym szybciej sie wykona!"<<endl;
     priority = getInt("Podaj priorytet zadania: ");//load priority using protected funciton
@@ -21,11 +37,17 @@ void dodaj_zadanie(szablon_kolejki<int, string>& queue1)//add new task to vector
     queue1.addTask(priority, duration, name);//put values to vector which is given by argument typping 
     cout<<endl;
     cout << "Zadanie dodane!" << endl;
+
+    confirm_newTask();
 }
 
 
 void usun_zadanie(szablon_kolejki<int, string>& queue1) 
 {
+    cout<<"-------------------------------------------------------------------"<<endl;
+    cout<<"Gdy wszedles przypadkowo... wprowadz losowe dane!"<<endl;
+    cout<<"-------------------------------------------------------------------"<<endl;
+
     if (queue1.queue.empty()) //if queue1(argument) . queue(template vector, from szablon_kolejki) is empty
     {
         cout << "Kolejka jest pusta, nie ma czego usunac!" << endl;
@@ -55,14 +77,20 @@ void usun_zadanie(szablon_kolejki<int, string>& queue1)
             queue1.queue.erase(it);//erase it(this task which is what we were looking for)
             cout<<endl;
             cout << "Zadanie usuniete!" << endl;
+            confirm_newTask();
             return;
         }
     }
     cout << "Nie znaleziono zadania o podanych parametrach!" << endl;//if not found
+    confirm_newTask();
 }
 
 void edytuj_zadanie(szablon_kolejki<int, string>& queue1) 
 {
+    cout<<"-------------------------------------------------------------------"<<endl;
+    cout<<"Gdy wszedles przypadkowo... wprowadz losowe dane!"<<endl;
+    cout<<"-------------------------------------------------------------------"<<endl;
+
     if (queue1.queue.empty()) 
     {//if queue is empty
         cout << "Kolejka jest pusta, nie ma czego edytowac!" << endl;
@@ -99,24 +127,17 @@ void edytuj_zadanie(szablon_kolejki<int, string>& queue1)
             getline(cin, task.name);//ignore new line after cin - becouse as line from getline we want to skip part of \n
             cout<<endl;
             cout << "Zadanie zaktualizowane!" << endl;
+            confirm_newTask();
             return;
         }
     }
     cout << "Nie znaleziono zadania o podanych parametrach!" << endl;
+    confirm_newTask();
 }
 
 void wypisz_zadania(szablon_kolejki<int, string>& queue1) {
     queue1.display();//use function which is created in kolejka_szablon.hpp
-
-    //after display of tasks, make quick break(when use want to go to nex part, have to click ANY button)
-    cout << endl << endl << endl;
-    cout << "Czy chcesz przejsc dalej?" << endl;
-    cout << "Nacisnij dowolny przycisk..." << endl;
-    
-    //wait for input
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');//ignore all chars in input buffor  till you get new line char or get  max number of chars(in practive, find \n)
-    cin.get(); //wait for any button click to continue
-    system("clear");
+    confirm_newTask();
 }
 
 
