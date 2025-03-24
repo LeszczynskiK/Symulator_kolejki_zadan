@@ -16,6 +16,7 @@ CMakeFiles/MyExecutable.dir/main.cpp.o: symulacja.hpp
 CMakeFiles/MyExecutable.dir/main.cpp.o: zadania.hpp
 
 CMakeFiles/MyExecutable.dir/symulacja.cpp.o: kolejka_szablon.hpp
+CMakeFiles/MyExecutable.dir/symulacja.cpp.o: komunikaty.hpp
 CMakeFiles/MyExecutable.dir/symulacja.cpp.o: symulacja.cpp
 CMakeFiles/MyExecutable.dir/symulacja.cpp.o: symulacja.hpp
 

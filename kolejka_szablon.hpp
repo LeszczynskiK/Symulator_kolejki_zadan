@@ -44,6 +44,11 @@ public:
             cout << "Kolejka jest pusta" << endl;
         }
     }
+
+    bool empty() //is queue empty ? 
+    {
+        return queue.empty();
+    }
 };
 
 #endif // SKOLEJKA_SZABLON_HPP

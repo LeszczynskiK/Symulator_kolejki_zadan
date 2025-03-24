@@ -10,6 +10,7 @@ string name;
 void dodaj_zadanie(szablon_kolejki<int, string>& queue1)//add new task to vector
 {
 
+    cout<<"Im mniejszy index priorytetu tym szybciej sie wykona!"<<endl;
     priority = getInt("Podaj priorytet zadania: ");//load priority using protected funciton
 
     duration = getInt("Podaj czas wykonania zadania: ");//load duration using protected function
@@ -133,14 +134,9 @@ void chooseMode() // choos which function you want to call
 
 void startSimul()//start simulation of tasks working in queue
 {
-    system("clear");
-    cout<<"Zadania zaczynaja sie wykonywac zgodnie z zasada kolejki i priorytetow..."<<endl;
     cout<<endl;
 
-    cout<<"------------------------------------------------------------------";
-    cout<<endl;
-
-    
+    executeTasks(queue1);//start timulation of tasks working in queue based on priority
 
     cout<<endl;
     cout<<"------------------------------------------------------------------";
@@ -216,7 +212,9 @@ void opcje()
         system("clear");
         cout<<"Wybrano: ";
         cout<<endl;
-        cout<<"5. Symulacja dzialania zadan w kolejce";
+        cout<<"5. Symulacja dzialania zadan w kolejce"<<endl;
+        pause_add();
+        cout<<"Zadania zaczynaja sie wykonywac zgodnie z zasada kolejki i priorytetow..."<<endl;
         cout<<endl;
         cout<<"----------------------------------------"<<endl;
         startSimul(); // start simulation of tasks working in queue
