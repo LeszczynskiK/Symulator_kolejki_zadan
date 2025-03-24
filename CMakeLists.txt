@@ -13,6 +13,7 @@ set(SOURCES
     komunikaty.cpp
     zadania.cpp
     InputProtect.cpp
+    symulacja.cpp
 )
 
 # Heading files
@@ -21,6 +22,7 @@ set(HEADERS
     zadania.hpp
     kolejka_szablon.hpp
     InputProtect.hpp
+    symulacja.hpp
 )
 
 #Make executable file

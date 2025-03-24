@@ -204,6 +204,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+symulacja.o: symulacja.cpp.o
+
+.PHONY : symulacja.o
+
+# target to build an object file
+symulacja.cpp.o:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/symulacja.cpp.o
+.PHONY : symulacja.cpp.o
+
+symulacja.i: symulacja.cpp.i
+
+.PHONY : symulacja.i
+
+# target to preprocess a source file
+symulacja.cpp.i:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/symulacja.cpp.i
+.PHONY : symulacja.cpp.i
+
+symulacja.s: symulacja.cpp.s
+
+.PHONY : symulacja.s
+
+# target to generate assembly for a file
+symulacja.cpp.s:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/symulacja.cpp.s
+.PHONY : symulacja.cpp.s
+
 zadania.o: zadania.cpp.o
 
 .PHONY : zadania.o
@@ -249,6 +276,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... symulacja.o"
+	@echo "... symulacja.i"
+	@echo "... symulacja.s"
 	@echo "... zadania.o"
 	@echo "... zadania.i"
 	@echo "... zadania.s"

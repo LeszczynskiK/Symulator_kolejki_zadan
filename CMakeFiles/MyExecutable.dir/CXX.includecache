@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.cpp
+InputProtect.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.hpp
+
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.hpp
 iostream
 -
@@ -34,6 +38,24 @@ komunikaty.hpp
 zadania.hpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/zadania.hpp
 
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/symulacja.cpp
+symulacja.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/symulacja.hpp
+
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/symulacja.hpp
+iostream
+-
+vector
+-
+algorithm
+-
+kolejka_szablon.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/kolejka_szablon.hpp
+
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/zadania.cpp
+zadania.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/zadania.hpp
+
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/zadania.hpp
 iostream
 -
@@ -43,4 +65,6 @@ komunikaty.hpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/komunikaty.hpp
 InputProtect.hpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.hpp
+symulacja.hpp
+/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/symulacja.hpp
 

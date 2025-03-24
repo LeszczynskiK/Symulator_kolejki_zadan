@@ -11,6 +11,7 @@ szablon_kolejki<int, string> queue1; // T1 is in type(time) , T2 is string type(
 int main()
 {
 
+    system("clear");
     first_info();
     while (true)
     {

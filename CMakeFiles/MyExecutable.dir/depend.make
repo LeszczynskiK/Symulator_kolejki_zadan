@@ -12,11 +12,17 @@ CMakeFiles/MyExecutable.dir/main.cpp.o: InputProtect.hpp
 CMakeFiles/MyExecutable.dir/main.cpp.o: kolejka_szablon.hpp
 CMakeFiles/MyExecutable.dir/main.cpp.o: komunikaty.hpp
 CMakeFiles/MyExecutable.dir/main.cpp.o: main.cpp
+CMakeFiles/MyExecutable.dir/main.cpp.o: symulacja.hpp
 CMakeFiles/MyExecutable.dir/main.cpp.o: zadania.hpp
+
+CMakeFiles/MyExecutable.dir/symulacja.cpp.o: kolejka_szablon.hpp
+CMakeFiles/MyExecutable.dir/symulacja.cpp.o: symulacja.cpp
+CMakeFiles/MyExecutable.dir/symulacja.cpp.o: symulacja.hpp
 
 CMakeFiles/MyExecutable.dir/zadania.cpp.o: InputProtect.hpp
 CMakeFiles/MyExecutable.dir/zadania.cpp.o: kolejka_szablon.hpp
 CMakeFiles/MyExecutable.dir/zadania.cpp.o: komunikaty.hpp
+CMakeFiles/MyExecutable.dir/zadania.cpp.o: symulacja.hpp
 CMakeFiles/MyExecutable.dir/zadania.cpp.o: zadania.cpp
 CMakeFiles/MyExecutable.dir/zadania.cpp.o: zadania.hpp
 

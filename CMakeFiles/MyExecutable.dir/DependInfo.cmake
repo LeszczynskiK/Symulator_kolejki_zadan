@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/InputProtect.cpp" "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/CMakeFiles/MyExecutable.dir/InputProtect.cpp.o"
   "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/komunikaty.cpp" "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/CMakeFiles/MyExecutable.dir/komunikaty.cpp.o"
   "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/main.cpp" "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/CMakeFiles/MyExecutable.dir/main.cpp.o"
+  "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/symulacja.cpp" "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/CMakeFiles/MyExecutable.dir/symulacja.cpp.o"
   "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/zadania.cpp" "/home/krzysiek89/Desktop/QT_aplikacje/Kolejkowanie_zadan/CMakeFiles/MyExecutable.dir/zadania.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

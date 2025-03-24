@@ -6,6 +6,7 @@
 #include "kolejka_szablon.hpp"
 #include "komunikaty.hpp"
 #include "InputProtect.hpp"
+#include "symulacja.hpp"
 
 using namespace std;
 
